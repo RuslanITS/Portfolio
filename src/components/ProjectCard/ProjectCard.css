@@ -1,0 +1,9 @@
+.project-card {
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
