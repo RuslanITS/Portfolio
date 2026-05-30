@@ -1,12 +1,8 @@
-import './App.css'
+import Header from "./components/Header/Heater.tsx";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const App = () => {
+const App = () => (
+    <Header />
+);
 
-  return (
-    <>
-
-    </>
-  )
-};
-
-export default App
+export default App;
