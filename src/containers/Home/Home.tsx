@@ -1,5 +1,14 @@
+import Hero from "../../components/Hero/Hero.tsx";
+import About from "../../components/About/About.tsx";
+
 const Home = () => {
-  return <h1>Home Page</h1>;
+
+  return (
+    <>
+      <Hero/>
+      <About/>
+    </>
+  )
 };
 
 export default Home;
