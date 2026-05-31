@@ -1,7 +1,7 @@
+import * as React from "react";
 import { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
-
 import type { Project } from "../../../Type";
 
 type Props = {
@@ -17,7 +17,7 @@ const ProjectModal = ({show, handleClose, onAddProject}: Props) => {
   const [githubUrl, setGithubUrl] = useState("");
 
   const submitHandler = (
-    e: React.FormEvent<HTMLFormElement>
+    e: React.SyntheticEvent
   ) => {
     e.preventDefault();
 
@@ -66,6 +66,14 @@ const ProjectModal = ({show, handleClose, onAddProject}: Props) => {
           <Form.Group className="mb-3">
             <Form.Label>Project Name</Form.Label>
 
+            <Form.Control
+              value={title}
+              onChange={(e) =>
+                setTitle(e.target.value)
+              }
+            />
+          </Form.Group>
+
             <Form.Group className="mb-3">
               <Form.Label>Technologies</Form.Label>
 
@@ -77,14 +85,6 @@ const ProjectModal = ({show, handleClose, onAddProject}: Props) => {
                 }
               />
             </Form.Group>
-
-            <Form.Control
-              value={title}
-              onChange={(e) =>
-                setTitle(e.target.value)
-              }
-            />
-          </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Description</Form.Label>
