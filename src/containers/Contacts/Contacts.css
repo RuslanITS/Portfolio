@@ -1,0 +1,19 @@
+.contact-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15)
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+.contact-link:hover {
+  color: #0d6efd;
+}
