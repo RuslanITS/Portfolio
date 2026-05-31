@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Col, Container, Row, Button, Card } from "react-bootstrap";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProjectCard from "../../components/Project/ProjectCard";
 import type { Project } from "../../Type";
-import ProjectModal from "../../components/ProjectModal/ProjectModal";
+import ProjectModal from "../../components/Project/ProjectModal/ProjectModal";
 
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([

@@ -1,0 +1,12 @@
+.skill-card {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.c-body {
+  font-size: 3rem;
+}

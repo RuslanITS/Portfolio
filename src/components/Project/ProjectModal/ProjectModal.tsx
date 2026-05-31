@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 
-import type { Project } from "../../Type";
+import type { Project } from "../../../Type";
 
 type Props = {
   show: boolean;

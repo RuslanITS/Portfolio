@@ -5,3 +5,11 @@ export type Project = {
   technology: string[];
   githubUrl: string;
 };
+
+export type Skill = {
+  id: number;
+  title: string;
+  level: string;
+  icon: ReactNode;
+  category: string;
+};
