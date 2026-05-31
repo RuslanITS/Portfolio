@@ -1,17 +1,5 @@
-import {
-  Card,
-  Col,
-  Container,
-  Row,
-} from "react-bootstrap";
-
-import {
-  FaEnvelope,
-  FaTelegram,
-  FaGithub,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
-
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { FaEnvelope, FaTelegram, FaGithub, FaMapMarkerAlt } from "react-icons/fa";
 import "./Contacts.css";
 
 const Contacts = () => {
@@ -100,9 +88,7 @@ const Contacts = () => {
 
               <h5>Location</h5>
 
-              <p className="mb-0">
-                Bishkek, Kyrgyzstan
-              </p>
+              <p className="mb-0">Bishkek, Kyrgyzstan</p>
             </Card.Body>
           </Card>
         </Col>
